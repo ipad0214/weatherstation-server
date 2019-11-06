@@ -1,0 +1,5 @@
+sqlalchemy
+flask
+flask_jsontools
+simplejson
+psycopg2-binary
