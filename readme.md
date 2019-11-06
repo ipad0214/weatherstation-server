@@ -1,5 +1,9 @@
 # Weatherstation Server
 
+## Version
+
+release: v1.0.0
+
 ## Installation
 ___
 ### Get resources
