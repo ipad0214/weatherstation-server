@@ -289,7 +289,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"admin\",\n\t\"password\": \"asfasfasfa\",\n\t\"granted\": true,\n\t\"role\": 1\n}",
+							"raw": "{\n\t\"name\": \"paddy\",\n\t\"password\": \"asfasfasfa\",\n\t\"granted\": true,\n\t\"role\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -322,7 +322,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"admin\",\n\t\"password\": \"python_rules\",\n\t\"granted\": 0,\n\t\"role\": 1\n}"
+							"raw": "{\n\t\"name\": \"paddy-admin\",\n\t\"password\": \"python_rules\",\n\t\"granted\": 0,\n\t\"role\": 1\n}"
 						},
 						"url": {
 							"raw": "{{server}}/user?id=1",
@@ -400,6 +400,63 @@
 									"key": "id",
 									"value": "3"
 								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "config",
+			"item": [
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"interval\": 30,\n\t\"apiKey\". \"isdgoiasdg\"\n}"
+						},
+						"url": {
+							"raw": "{{server}}/user?id=1",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/user",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user"
 							]
 						}
 					},
